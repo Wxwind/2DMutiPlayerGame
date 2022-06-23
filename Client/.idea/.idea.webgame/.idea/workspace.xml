@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d3988dc-717d-4ed0-9d57-d7a55a30acad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ClientMgr.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ClientMgr.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ServerMgr.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ServerMgr.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConnectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConnectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/ClientMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/ClientMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/Connection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/Network_Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/Network_Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/RemotePlayerMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/RemotePlayerMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/ServerMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/ServerMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.7.0/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TPSDemo-master/Assets/Script/Network/KCP.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SCPlayer_args.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Test2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TPSDemo-master/Assets/Script/Actor/HpBar.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/MsgId.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24BquzfOw8bY4PSFIlAXDRVukmG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C#" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d3988dc-717d-4ed0-9d57-d7a55a30acad" name="Changes" comment="" />
+      <created>1643114559911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643114559911</updated>
+      <workItem from="1643114587070" duration="1788000" />
+      <workItem from="1643160585370" duration="297000" />
+      <workItem from="1643160908119" duration="61000" />
+      <workItem from="1643161215540" duration="1659000" />
+      <workItem from="1643162970180" duration="5901000" />
+      <workItem from="1643199475200" duration="8146000" />
+      <workItem from="1643212067055" duration="205000" />
+      <workItem from="1643253915230" duration="168000" />
+      <workItem from="1643254277110" duration="4000" />
+      <workItem from="1643254354955" duration="1309000" />
+      <workItem from="1643255723681" duration="7319000" />
+      <workItem from="1643351555285" duration="708000" />
+      <workItem from="1643365974122" duration="2364000" />
+      <workItem from="1643435643870" duration="1177000" />
+      <workItem from="1643454653613" duration="5620000" />
+      <workItem from="1643622954045" duration="39000" />
+      <workItem from="1643851441575" duration="701000" />
+      <workItem from="1643855803990" duration="9499000" />
+      <workItem from="1643942835988" duration="2172000" />
+      <workItem from="1644114542899" duration="6585000" />
+      <workItem from="1644201493805" duration="8988000" />
+      <workItem from="1644377318833" duration="1783000" />
+      <workItem from="1644473052113" duration="2703000" />
+      <workItem from="1644487297508" duration="5826000" />
+      <workItem from="1644501770195" duration="94000" />
+      <workItem from="1644543187124" duration="2923000" />
+      <workItem from="1644551908597" duration="1331000" />
+      <workItem from="1644556362722" duration="5108000" />
+      <workItem from="1644573222717" duration="2389000" />
+      <workItem from="1644587419044" duration="271000" />
+      <workItem from="1644587795489" duration="123000" />
+      <workItem from="1644587955555" duration="1127000" />
+      <workItem from="1644589216083" duration="26000" />
+      <workItem from="1644634875532" duration="5772000" />
+      <workItem from="1644642474797" duration="3000" />
+      <workItem from="1644642995188" duration="119000" />
+      <workItem from="1644643440369" duration="158000" />
+      <workItem from="1644652734404" duration="10030000" />
+      <workItem from="1644714637312" duration="1300000" />
+      <workItem from="1644724398297" duration="7312000" />
+      <workItem from="1644809302486" duration="8890000" />
+      <workItem from="1644895631901" duration="15705000" />
+      <workItem from="1644977264709" duration="3521000" />
+      <workItem from="1644988410894" duration="9991000" />
+      <workItem from="1645060351275" duration="6587000" />
+      <workItem from="1645186211432" duration="2849000" />
+      <workItem from="1645198010955" duration="200000" />
+      <workItem from="1645198275680" duration="670000" />
+      <workItem from="1645230077116" duration="4973000" />
+      <workItem from="1645337782346" duration="3791000" />
+      <workItem from="1645343604622" duration="7505000" />
+      <workItem from="1645364957658" duration="1754000" />
+      <workItem from="1645414381607" duration="2945000" />
+      <workItem from="1645420925824" duration="6802000" />
+      <workItem from="1645440838154" duration="7298000" />
+      <workItem from="1645708123506" duration="2373000" />
+      <workItem from="1645761903134" duration="2602000" />
+      <workItem from="1645844952604" duration="16738000" />
+      <workItem from="1645931135606" duration="17182000" />
+      <workItem from="1645975023336" duration="745000" />
+      <workItem from="1646461908475" duration="1762000" />
+      <workItem from="1646563015253" duration="3705000" />
+      <workItem from="1646631232768" duration="695000" />
+      <workItem from="1646635398064" duration="1253000" />
+      <workItem from="1646714491969" duration="10356000" />
+      <workItem from="1646797400377" duration="63000" />
+      <workItem from="1647062594051" duration="2621000" />
+      <workItem from="1647429211620" duration="3578000" />
+      <workItem from="1648013200208" duration="2095000" />
+      <workItem from="1648178721654" duration="1387000" />
+      <workItem from="1650268189758" duration="1102000" />
+      <workItem from="1651310987718" duration="767000" />
+      <workItem from="1652676122198" duration="2173000" />
+      <workItem from="1653196733507" duration="438000" />
+      <workItem from="1653286152706" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
