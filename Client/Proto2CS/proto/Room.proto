@@ -1,0 +1,47 @@
+syntax = "proto3";
+package Test;
+option csharp_namespace = "NetMessage.Room";
+import "Enum.proto";
+import "PlayerInfo.proto";
+
+enum EventCode{
+  EventNone = 0;
+  PlayerEnterRoom = 1;
+  PlayerExitRoom = 2;
+  PlayerStartGame = 3;
+}
+
+enum FuncCode {
+  FuncNone = 0;
+  ExitRoom = 1;
+  StartGame = 2;
+}
+
+message RoomPack{
+  //发生事件的房间号
+  string roomId = 1;
+  //单客户端与服务端的通信
+  FuncCode FuncCode = 2;
+  ReturnCode returnCode = 3;
+  RoomSettings RoomSettings = 4;
+  //用于服务器广播给其他玩家
+  RoomEvent RoomEvent = 5;
+}
+
+message RoomEvent{
+  //发出事件的源玩家,由服务端接收消息后填充
+  string srcPlayerIp = 1;
+  //发生了什么事
+  EventCode eventCode = 2;
+
+  //通知其他新玩家进入，新玩家的信息
+  PlayerInfo playerInfo = 3;
+  
+  //用于开始游戏
+  RoomSettings RoomSettings=4;
+  repeated PlayerInfo players=5;
+}
+
+message RoomSettings{
+  int32 mapId = 1;
+}

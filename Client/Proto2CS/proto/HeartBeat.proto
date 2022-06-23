@@ -1,0 +1,8 @@
+syntax="proto3";
+package Test;
+option csharp_namespace="NetMessage.Lobby";
+
+message HeartBeatPack{
+
+}
+

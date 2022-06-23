@@ -1,0 +1,10 @@
+syntax="proto3";
+package Test;
+option csharp_namespace="NetMessage.Enum";
+
+enum ReturnCode{
+  ReturnNone=0;
+  Success=1;
+  Fail=2;
+} 
+

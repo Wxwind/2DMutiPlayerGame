@@ -1,0 +1,59 @@
+syntax="proto3";
+package Test;
+option csharp_namespace="NetMessage.Conn";
+import "Enum.proto";
+
+//告诉服务器/客户端的ConnResponder要取UserConnPack中哪个包
+enum FuncCode{
+  FuncNone=0;
+  Register=1;
+  Login=2;
+  InitConn=3;
+}
+
+enum ErrorCode{
+  ErrorNone=0;
+  HasUserNameRegistered=1;
+  LoginFail=2;
+}
+
+message ConnPack{
+  FuncCode funcCode=1;
+  S2C_InitConn s2c_InitConn=2;
+  C2S_Register c2sRegister=4;
+  S2C_Register s2cRegister=5;
+  C2S_Login c2sLogin=6;
+  S2C_Login s2cLogin=7;
+}
+
+message S2C_InitConn{
+  ReturnCode returnCode=1;
+  string clientIp=2;
+}
+
+message C2S_Register{
+  string username=1;
+  string password=2;
+  string playerName=3;
+}
+
+message S2C_Register{
+  ReturnCode returnCode=1;
+  ErrorCode errorCode=2;
+}
+
+message C2S_Login{
+  string username=1;
+  string password=2;
+}
+
+message S2C_Login{
+  ReturnCode returnCode=1;
+  ErrorCode errorCode=2;
+  UserInfo userInfo=3;
+}
+
+message UserInfo{
+  string userName=1;
+}
+

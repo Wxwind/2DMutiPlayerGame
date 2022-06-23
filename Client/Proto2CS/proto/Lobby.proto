@@ -1,0 +1,49 @@
+syntax="proto3";
+package Test;
+option csharp_namespace="NetMessage.Lobby";
+import "Enum.proto";
+import "PlayerInfo.proto";
+
+enum FuncCode{
+  FuncNone=0;
+  EnterRoom=1;
+  CreateRoom=2;
+  RefreshRoom=3;
+}
+
+enum ErrorCode{
+  ErrorNone=0;
+  //FindRoom/JoinRoom
+  NotExistRoom=1;
+  MaxNum=2;
+  GameStarted=3;
+  //CreateRoom
+  CreateFail=5;
+}
+
+message LobbyPack{
+  FuncCode funcCode=1;
+  ReturnCode returnCode=2;
+  ErrorCode errorCode=3;
+  //c2s JoinRoom
+  string c2sRoomId=4;
+  //c2s CreateRoom
+  C2SRoomInfo c2sRoomInfo=5;
+  //s2c RefreshRoom/s2c CreateRoom
+  repeated S2CRoomInfo s2cRoomInfo=6;
+  repeated PlayerInfo s2cPlayerInfo=7;
+}
+
+message S2CRoomInfo{
+  string RoomId=1;
+  string RoomName=2;
+  string HostName=3;
+  int32 PlayerNum=4;
+  int32 MaxPlayerNum=5;
+}
+
+message C2SRoomInfo{
+  string RoomName=1;
+  string HostName=2;
+  int32 MaxPlayerNum=3;
+}

@@ -1,0 +1,15 @@
+syntax="proto3";
+package Test;
+option csharp_namespace="NetMessage";
+
+message PlayerInfo{
+  //进入房间时展示的玩家信息
+  string PlayerName=1;
+  string ip=2;
+  int32 playerId=3;
+  //仅用于进入游戏时初始化玩家实体信息
+  float PosX=4;
+  float PosY=5;
+  int32 ColorId=6;
+  int32 Hp=7;
+}

@@ -1,0 +1,57 @@
+syntax="proto3";
+package Test;
+option csharp_namespace="NetMessage.Game";
+
+enum FuncCode{
+	FuncNone=0;
+	Move=1;
+	Damage=2;
+	NewBullet=3;
+	BulletPos=4;
+	DelBullet=5;
+	//服务器单向通知
+	GameEnd=10;
+	PlayerDead=11;
+}
+		
+message GamePack{
+	FuncCode funcCode=1;
+	string RoomId=2;
+	//同步位置
+	MovePack movePack=3;
+	//根据id和funccode决定删除和添加的子弹，根据positon同步位置
+	repeated BulletPack bulletPack=4;
+	//事件包
+	DamagePack damagePack=5;
+	string PlayerDeadSrcIp=6;
+	GameEndPack gameEndPack=7;
+}
+
+message MovePack{
+	int32 frame=1;
+	string srcIp=2;
+	MVector2 position=3;
+	int32 faceDir=4;
+}
+
+message BulletPack{
+	int32 frame=1;
+	string srcIp=2;
+	int32 id=3;
+	MVector2 position=4;
+}
+
+message MVector2{
+	float x=1;
+	float y=2;
+}
+
+message DamagePack{
+	string srcIp=1;
+	string desIp=2;
+	int32 attack=3;
+}
+
+message GameEndPack{
+	string winnerName=1;
+}

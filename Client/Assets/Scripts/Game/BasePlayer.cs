@@ -8,7 +8,7 @@ namespace Game
 {
     public class BasePlayer : MonoBehaviour
     {
-        public GameObject playerHealthItemPre;
+        //public GameObject playerHealthItemPre;
 
         protected string ip;
         protected string playerName;
