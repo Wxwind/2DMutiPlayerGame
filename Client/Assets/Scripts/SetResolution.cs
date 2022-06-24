@@ -28,8 +28,8 @@ public class SetResolution : MonoBehaviour
 
         dropdown.onValueChanged.AddListener(index =>
         {
-            dropdown.captionText.text = ToResolutionString(resos[index]);
-            SetScreenResolution(resos[index]);
+            dropdown.captionText.text = ToResolutionString(resos[2*index]);
+            SetScreenResolution(resos[2*index]);
         });
     }
 
