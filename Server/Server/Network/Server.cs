@@ -9,10 +9,11 @@ using WX.Utils;
 
 namespace WX.Network;
 
-class Server:Singleton<Server>
+class Server : Singleton<Server>
 {
     private readonly UdpClient m_udpClient;
-    private readonly Dictionary<IPEndPoint, Connection> m_connMap = new();
+
+    private readonly ConcurrentDictionary<IPEndPoint, Connection> m_connMap = new();
     //private readonly ConcurrentDictionary<IPEndPoint, Connection> m_connMap = new();
 
     public Server(int port)
@@ -22,9 +23,8 @@ class Server:Singleton<Server>
         Console.WriteLine("Udp服务器已成功启动");
     }
 
-    public Server():this(6123)
+    public Server() : this(6123)
     {
-        
     }
 
     //接收消息并传进kcp(kcp_input)
@@ -40,7 +40,7 @@ class Server:Singleton<Server>
                 var conn = new Connection(this, Send, ep, DisConnect);
                 conn.KCP_Input(buffer);
                 AddConnetion(conn);
-                Log.LogInfo($"建立新连接:{ep}",false);
+                Log.LogInfo($"建立新连接:{ep}", false);
             }
             else
             {
@@ -95,19 +95,23 @@ class Server:Singleton<Server>
 
     public void AddConnetion(Connection conn)
     {
-        m_connMap.Add(conn.GetIpEndPoint,conn);
+        if (m_connMap.TryAdd(conn.GetIpEndPoint, conn))
+        {
+            Log.LogInfo($"{conn.GetIpEndPoint} 加入服务器");
+        }
+        else Log.LogInfo($"{conn.GetIpEndPoint} 重复加入服务器");
     }
 
     public bool ContainsConnection(Connection conn)
     {
         return m_connMap.ContainsKey(conn.GetIpEndPoint);
     }
+
     private void DisConnect(IPEndPoint ep)
     {
-        if (m_connMap.ContainsKey(ep))
+        m_connMap[ep].DisConnect();
+        if (m_connMap.TryRemove(ep, out _))
         {
-            m_connMap[ep].DisConnect();
-            m_connMap.Remove(ep);
             Console.WriteLine($"客户端（{ep}）长时间未响应，已断开连接");
         }
     }

@@ -94,7 +94,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.GameServer">
@@ -232,6 +232,8 @@
       <workItem from="1655997518608" duration="2780000" />
       <workItem from="1656000756561" duration="4000" />
       <workItem from="1656070358776" duration="3035000" />
+      <workItem from="1656338800732" duration="21000" />
+      <workItem from="1657532118167" duration="7173000" />
     </task>
     <servers />
   </component>
