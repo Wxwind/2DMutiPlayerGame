@@ -30,30 +30,30 @@ static class Log
         m_isOutputToFile = isOutputToFile;
     }
 
-    public static void LogInfo(string msg, bool isLogDetail = true)
+    public static void LogInfo(string msg)
     {
         if (m_logLevel >= LogLevel.Info)
         {
             Console.ForegroundColor = ConsoleColor.Gray;
-            LogMsg(msg, isLogDetail);
+            LogMsg(msg, m_isOutputToFile);
         }
     }
 
-    public static void LogWarning(string msg, bool isLogDetail = true)
+    public static void LogWarning(string msg)
     {
         if (m_logLevel >= LogLevel.Warning)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            LogMsg(msg, isLogDetail);
+            LogMsg(msg, m_isOutputToFile);
         }
     }
 
-    public static void LogError(string msg, bool isLogDetail = true)
+    public static void LogError(string msg)
     {
         if (m_logLevel >= LogLevel.Error)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            LogMsg(msg, isLogDetail);
+            LogMsg(msg, m_isOutputToFile);
         }
     }
 

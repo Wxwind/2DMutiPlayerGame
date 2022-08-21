@@ -20,7 +20,7 @@ class Server : Singleton<Server>
     {
         m_udpClient = new UdpClient(port);
         m_udpClient.BeginReceive(ReceiveCallback, null);
-        Console.WriteLine("Udp服务器已成功启动");
+        Log.LogInfo("Udp服务器已成功启动");
     }
 
     public Server() : this(6123)
@@ -40,7 +40,7 @@ class Server : Singleton<Server>
                 var conn = new Connection(this, Send, ep, DisConnect);
                 conn.KCP_Input(buffer);
                 AddConnetion(conn);
-                Log.LogInfo($"建立新连接:{ep}", false);
+                Log.LogInfo($"建立新连接:{ep}");
             }
             else
             {
@@ -112,7 +112,7 @@ class Server : Singleton<Server>
         m_connMap[ep].DisConnect();
         if (m_connMap.TryRemove(ep, out _))
         {
-            Console.WriteLine($"客户端（{ep}）长时间未响应，已断开连接");
+            Log.LogInfo($"客户端（{ep}）长时间未响应，已断开连接");
         }
     }
 
