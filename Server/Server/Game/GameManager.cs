@@ -23,7 +23,7 @@ class GameManager
     {
         m_room = room;
         m_maxPlayerNum = maxNum;
-        m_gameResponder = MsgHandler.instance.GetResponder(ActionType.Game) as GameResponder;
+        m_gameResponder = (MsgHandler.instance.GetResponder(ActionType.Game) as GameResponder)!;
     }
 
     // private void AddPlayer(string ip,Connection conn)

@@ -1,5 +1,5 @@
 ﻿using System;
-using WX;
+using WX.GrpcServer;
 using WX.Network;
 using WX.Utils;
 
@@ -15,6 +15,7 @@ class Program
     {
         Log.SetLevel(Log.LogLevel.Info);
         Log.SetOuputToFile(false);
+        ConnGrpcServer connGrpcServer = new ConnGrpcServer(6124);
 
         double runningTime = 0;
         DateTime currentTime = GetTime();
@@ -37,7 +38,8 @@ class Program
                 Server.Instance.Update(dt);
             }
         }
-
+        
+        connGrpcServer.Close();
         Log.LogError("服务器已关闭");
         Console.ReadKey();
     }

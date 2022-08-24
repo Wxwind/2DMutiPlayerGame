@@ -54,7 +54,7 @@ class Room
         m_roomName = roomName;
         m_nowPlayerNum = 0;
         m_gameManager = new GameManager(this,m_maxPlayerNum);
-        m_roomResponder = MsgHandler.instance.GetResponder(ActionType.Room) as RoomResponder;
+        m_roomResponder = (MsgHandler.instance.GetResponder(ActionType.Room) as RoomResponder)!;
     }
 
     public bool TryAddPlayer(Connection conn, out ErrorCode errorCode)

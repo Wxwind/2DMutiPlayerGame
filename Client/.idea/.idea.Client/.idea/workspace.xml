@@ -5,13 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f826fded-8450-435d-9246-1c2fa3d94de9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Message/ConnGrpcServer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Message/ConnGrpcServer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Message/ConnGrpcServerGrpc.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Message/ConnGrpcServerGrpc.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/Server/GrpcServer/ConnGrpcServer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/Server/GrpcServer/ProtoGrpc/ConnGrpcServer.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/.idea.GameServer/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/.idea.GameServer/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Google.Protobuf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Google.Protobuf.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/System.Buffers.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/System.Memory.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Panel/RegisterPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Panel/RegisterPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Log.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Log.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/.idea.GameServer/.idea/dataSources/243be2b8-9d43-4034-b62b-dd3ab5253c60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/.idea.GameServer/.idea/dataSources/243be2b8-9d43-4034-b62b-dd3ab5253c60.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/.idea.GameServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/.idea.GameServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/DAO/Model/PlayerAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/DAO/Model/PlayerAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/Game/LobbyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Game/LobbyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/Game/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Game/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/Game/UserInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Game/UserInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/Server/Network/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Network/Server.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/Server/Utils/Log.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Utils/Log.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Server/Utils/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server/Utils/Singleton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,18 +103,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29YPTnDGRv3TvoJVtsOsncyXDJP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "rider.run.widget.enabled.cache": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\webgame.exe" />
@@ -120,10 +145,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14032">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14032" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -199,6 +224,14 @@
       <workItem from="1656000029561" duration="436000" />
       <workItem from="1656073087091" duration="2176000" />
       <workItem from="1660982980083" duration="726000" />
+      <workItem from="1661249289687" duration="2421000" />
+      <workItem from="1661261701960" duration="30000" />
+      <workItem from="1661269315616" duration="510000" />
+      <workItem from="1661269877750" duration="2844000" />
+      <workItem from="1661273693601" duration="4274000" />
+      <workItem from="1661278205621" duration="2207000" />
+      <workItem from="1661309987076" duration="14000" />
+      <workItem from="1661310110540" duration="714000" />
     </task>
     <servers />
   </component>
@@ -218,7 +251,37 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Panel/RegisterPanel.cs</url>
+          <line>150</line>
+          <properties documentPath="D:\Unity_projs\WebGame\Client\Assets\Scripts\Panel\RegisterPanel.cs" initialLine="149" containingFunctionPresentation="method 'RegisterByGRPC'">
+            <startOffsets>
+              <option value="4522" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4554" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

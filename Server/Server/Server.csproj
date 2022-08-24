@@ -10,11 +10,20 @@
 
     <ItemGroup>
       <PackageReference Include="Google.Protobuf" Version="3.21.0-rc2" />
+      <PackageReference Include="Grpc" Version="2.46.3" />
+      <PackageReference Include="Grpc.Tools" Version="2.48.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="GrpcServer/ProtoGrpc/*.proto" />
     </ItemGroup>
 
 </Project>

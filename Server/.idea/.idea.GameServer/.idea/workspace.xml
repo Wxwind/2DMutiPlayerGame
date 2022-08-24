@@ -11,12 +11,27 @@
   <component name="ChangeListManager">
     <list default="true" id="596ea3e5-11a9-4ad7-8ce3-2a4faf7f5f51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Client/.idea/.idea.Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/.idea.Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameServer/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameServer/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/Google.Protobuf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/Google.Protobuf.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/System.Buffers.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/System.Memory.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Scripts/Panel/RegisterPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Assets/Scripts/Panel/RegisterPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/Assets/Scripts/Utils/Log.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/Assets/Scripts/Utils/Log.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameServer/.idea/dataSources/243be2b8-9d43-4034-b62b-dd3ab5253c60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameServer/.idea/dataSources/243be2b8-9d43-4034-b62b-dd3ab5253c60.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DAO/Model/PlayerAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/DAO/Model/PlayerAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Game/LobbyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Game/LobbyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Game/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Game/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Game/UserInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Game/UserInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Network/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Network/Server.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Utils/Log.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Utils/Log.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Utils/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Utils/Singleton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +57,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70a2cfe2187840658b42656cadad519063990/2e/1be4c42a/IMessage`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70a2cfe2187840658b42656cadad519063990/5d/598d0629/MessageParser`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70a2cfe2187840658b42656cadad519063990/60/74eaff6b/IBufferMessage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70a2cfe2187840658b42656cadad519063990/99/8ab521a1/IBufferMessage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70a2cfe2187840658b42656cadad519063990/ba/5126b78a/RepeatedField`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/826c5b96149f4948a6f190f6e6ddfedf7ba80/96/37dfc78a/UdpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8fe5b9fa0d07425ba30fafd53baa5a7ea23880/1a/86a83f9e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -87,7 +103,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="29Ya8BCc3GW6btO1ttbH5tWbPbJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -239,6 +257,16 @@
       <workItem from="1658240358239" duration="3029000" />
       <workItem from="1660121141497" duration="468000" />
       <workItem from="1661099544053" duration="1508000" />
+      <workItem from="1661103220979" duration="5145000" />
+      <workItem from="1661108597217" duration="29000" />
+      <workItem from="1661249517552" duration="2697000" />
+      <workItem from="1661260677054" duration="30000" />
+      <workItem from="1661269562196" duration="249000" />
+      <workItem from="1661270180401" duration="1263000" />
+      <workItem from="1661275515980" duration="1736000" />
+      <workItem from="1661278260538" duration="2646000" />
+      <workItem from="1661309930678" duration="896000" />
+      <workItem from="1661311177672" duration="31000" />
     </task>
     <servers />
   </component>
@@ -248,6 +276,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

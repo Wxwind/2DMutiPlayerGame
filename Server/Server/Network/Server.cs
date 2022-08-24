@@ -16,11 +16,11 @@ class Server : Singleton<Server>
     private readonly ConcurrentDictionary<IPEndPoint, Connection> m_connMap = new();
     //private readonly ConcurrentDictionary<IPEndPoint, Connection> m_connMap = new();
 
-    public Server(int port)
+    private Server(int port)
     {
         m_udpClient = new UdpClient(port);
         m_udpClient.BeginReceive(ReceiveCallback, null);
-        Log.LogInfo("Udp服务器已成功启动");
+        Log.LogInfo($"Udp服务器已成功启动，端口: {port}");
     }
 
     public Server() : this(6123)

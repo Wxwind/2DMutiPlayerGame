@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using UnityEngine;
 
 namespace WX
 {
@@ -16,6 +17,7 @@ namespace WX
 
         private static readonly string m_logPath = Environment.CurrentDirectory + "/Log/";
         private static readonly string m_logFilename = m_logPath + "Log.txt";
+        private static bool m_isOutputToFile = false;
 
         private static LogLevel m_logLevel = LogLevel.Info;
 
@@ -26,42 +28,44 @@ namespace WX
 
         public static void LogInfo(string msg)
         {
-            if (m_logLevel > LogLevel.Info)
+            if (m_logLevel >= LogLevel.Info)
             {
-                Console.ForegroundColor = ConsoleColor.White;
-                LogMsg(msg);
+                UnityEngine.Debug.Log(msg);
+                if (m_isOutputToFile)
+                {
+                    OutPutToFile(msg);
+                }
             }
         }
 
         public static void LogWarning(string msg)
         {
-            if (m_logLevel > LogLevel.Warning)
+            if (m_logLevel >= LogLevel.Warning)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                LogMsg(msg);
+                UnityEngine.Debug.LogWarning(msg);
+                if (m_isOutputToFile)
+                {
+                    OutPutToFile(msg);
+                }
             }
         }
 
         public static void LogError(string msg)
         {
-            if (m_logLevel > LogLevel.Error)
+            if (m_logLevel >= LogLevel.Error)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                LogMsg(msg);
+                UnityEngine.Debug.LogError(msg);
+                if (m_isOutputToFile)
+                {
+                    OutPutToFile(msg);
+                }
             }
         }
 
-        private static void LogMsg(string msg)
+        private static void OutPutToFile(string msg)
         {
             var nowTime = GetRealTime();
             var info = GetRunInfo();
-
-            Console.WriteLine(nowTime);
-            Console.WriteLine(msg);
-            foreach (var t in info)
-            {
-                Console.WriteLine(t);
-            }
 
             var path = Environment.CurrentDirectory + "/Log/";
             if (!Directory.Exists(path))
@@ -77,7 +81,6 @@ namespace WX
             foreach (var t in info)
             {
                 sw.WriteLine(t);
-                ;
             }
 
             sw.Close();
@@ -87,14 +90,17 @@ namespace WX
         public static void LogExpection(Exception e)
         {
             var t = e.ToString();
-            Console.WriteLine(t);
-            var fs = File.Open(m_logFilename, FileMode.Append, FileAccess.Write);
-            var sw = new StreamWriter(fs, Encoding.UTF8);
-            sw.WriteLine(t);
-            sw.Flush();
-            fs.Flush();
-            sw.Close();
-            fs.Close();
+            UnityEngine.Debug.LogException(e);
+            if (m_isOutputToFile)
+            {
+                var fs = File.Open(m_logFilename, FileMode.Append, FileAccess.Write);
+                var sw = new StreamWriter(fs, Encoding.UTF8);
+                sw.WriteLine(t);
+                sw.Flush();
+                fs.Flush();
+                sw.Close();
+                fs.Close();
+            }
         }
 
         private static string[] GetRunInfo()

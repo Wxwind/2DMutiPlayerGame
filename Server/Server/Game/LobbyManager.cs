@@ -20,7 +20,7 @@ class LobbyManager : Singleton<LobbyManager>
 
     public LobbyManager()
     {
-        m_roomResponder = MsgHandler.instance.GetResponder(ActionType.Room) as RoomResponder;
+        m_roomResponder = (MsgHandler.instance.GetResponder(ActionType.Room) as RoomResponder)!;
     }
 
     public void RemoveRoom(Room room)

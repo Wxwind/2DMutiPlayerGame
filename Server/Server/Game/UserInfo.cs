@@ -6,7 +6,7 @@ namespace WX.Game;
 public class UserInfo
 {
     public string PlayerName { get; set; }
-    public IPEndPoint Ip { get; set; }
+    //public IPEndPoint Ip { get; set; }
 
     public UserInfo(string playerName)
     {

@@ -1,6 +1,4 @@
-﻿
-
-namespace WX.DAO.Model;
+﻿namespace WX.DAO.Model;
 
 internal class PlayerAccount
 {
